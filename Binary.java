@@ -2,7 +2,7 @@ import java.lang.*;
 import java.util.*;
 import javax.swing.*;
 /**
- * Binary - This is a calculator that converts binary to decimal and decimal to binary.
+ * Binary - This is a calculator that converts binary to decimal values and decimal to binary values.
  * 
  * @author Holly Harnack
  * @version Septemper 2018
@@ -25,7 +25,7 @@ public class Binary {
                 options, 
                 options[0]);
 
-        if (selection == 0) //If Binary to Decimal
+        if (selection == 0) //If binary to decimal
         {
             input = JOptionPane.showInputDialog("Enter the number in binary: ");
             length = input.length(); 
@@ -52,7 +52,7 @@ public class Binary {
             
             JOptionPane.showMessageDialog(null, "The number in decimal is " + decimal);
         }
-        else if (selection == 1) //if Decimal to Binary 
+        else if (selection == 1) //if decimal to binary 
         {
             input = JOptionPane.showInputDialog("Enter the number in Decimal: ");
             number = Integer.parseInt(input);
@@ -72,7 +72,7 @@ public class Binary {
                 binary += addBit;
             }  
             
-            //Must display recursively 
+            //Must display in reverse 
             JOptionPane.showMessageDialog(null, "The number in binary is " + new StringBuilder(binary).reverse().toString());
         } 
         
