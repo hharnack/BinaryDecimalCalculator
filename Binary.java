@@ -34,17 +34,13 @@ public class Binary {
             for(i = 0; i<=(length-1) ; i++)
             {
                 bit = input.charAt(i); 
-                if (bit == 48)
-                {
-                    add = 0;
-                    decimal += add;
-                }
-                else if (bit == 49)
+       
+                if (bit == 49)
                 {
                     add = (int)Math.pow(2,i);
                     decimal += add;
                 }
-                else
+                else if (bit != 48)
                 {
                     System.out.print("not a valid number"); 
                 }
